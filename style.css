@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Suez+One&family=Ubuntu&display=swap');
 
-
+body{
+    overflow: hidden;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -172,4 +174,307 @@ form label{
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
+}
+.red_love{
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -10%;
+}
+.red_love img{
+    width: 33px;
+    height: 30px;
+    animation: animi 9200ms linear infinite;
+}
+.red_love img:nth-child(1){
+    width: 40px;
+    height: 37px;
+    animation-delay: 2000ms;
+}
+.red_love img:nth-child(2){
+    width: 43px;
+    height: 40px;
+    animation-delay: 5500ms;
+}
+.red_love img:nth-child(3){
+    width: 37px;
+    height: 40px;
+    animation-delay: 3000ms;
+}
+.red_love img:nth-child(4){
+    width: 23px;
+    height: 20px;
+    animation-delay: 1200ms;
+}
+.red_love img:nth-child(5){
+    width: 43px;
+    height: 40px;
+    animation-delay:-200ms;
+}
+.red_love img:nth-child(6){
+    width: 33px;
+    height: 30px;
+    animation-delay: 4300ms;
+}
+.red_love img:nth-child(7){
+    width: 43px;
+    height: 40px;
+    animation-delay: 0ms;
+}.red_love img:nth-child(8){
+    width: 42px;
+    height: 39px;
+    animation-delay: 1900ms;
+}.red_love img:nth-child(9){
+    width: 36px;
+    height: 33px;
+    animation-delay: 1100ms;
+}.red_love img:nth-child(10){
+    width: 44px;
+    height: 41px;
+    animation-delay: 5200ms;
+}.red_love img:nth-child(11){
+    width: 43px;
+    height: 40px;
+    animation-delay: 1800ms;
+}.red_love img:nth-child(12){
+    width: 29px;
+    height: 26px;
+    animation-delay: 5400ms;
+}.red_love img:nth-child(13){
+    width: 36px;
+    height: 33px;
+    animation-delay: 1500ms;
+}.red_love img:nth-child(14){
+    width: 43px;
+    height: 40px;
+    animation-delay: 100ms;
+}.red_love img:nth-child(15){
+    width: 28px;
+    height: 25px;
+    animation-delay: 3000ms;
+}
+
+@keyframes animi {
+    0%{
+        transform: translateY(5vh);
+        opacity: 0.7;
+    }
+    87%{
+        opacity: 0.7;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-110vh);
+        opacity: 0;
+    }
+}
+@media (max-width:500px){
+    body{
+        overflow: hidden;
+    }
+    .header img{
+        width: 160px;
+        margin-top: -10px;
+        transform: rotate(-5deg);
+    
+    }
+    .header span{
+        font-family: 'Suez One', serif;
+        font-size: 37px;
+        margin-left: -85px;
+        margin-top: -53px;
+    }
+    .header{
+        display: grid;
+        grid-template-columns: 210px 300px;
+        width: 400px;
+        margin: auto;
+        align-items: center;
+    }
+    .upper_content{
+        margin: -50px 0 10px 10px;
+        display: flex;
+        position: relative;
+        height: 150px;
+        justify-content: space-around;
+        text-align: center;
+        align-items: flex-start;
+    
+    }.upper_content span{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 20px;
+        text-shadow: 0px 5px 5px #234d3c2b;
+        margin-top: 10px;
+    }
+
+    .lovemeter{
+        height: 100px;
+        width: 100px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+        border: red solid 1px;
+        background-color: #faccd2;
+        position: absolute;
+        left: 40%;
+        bottom: 0%;
+    }
+    .lovemeter_counter{
+        text-align: center;
+        display: grid;
+        height: 100%;
+        align-items: center;
+        font-size:40px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .content{
+        text-align: center;
+    }
+    .quote-1{
+        font-size: 22px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+    }
+    .form-container{
+        margin-top: 30px;
+    }
+    #romeo_inp, #juliet_inp, #romeo_inp:focus, #juliet:focus{
+        border: none;
+        outline: none;
+        padding: 6px 8px 6px 9px;
+        font-size: 20px;
+        border-radius: 15px;
+    }
+    
+    .btn, .btn:focus{
+        outline: none;
+        border: none;
+    }
+    form label{
+        font-size: 20px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    form label:nth-child(2){
+        margin-top: 5px;
+    }
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .inputs p{
+        margin-top: 3px;
+        font-size: 18px;
+    }
+    .romeo_err, .juliet_err{
+        height: 20px;
+        font-size: 10px;
+        margin-left: 50px;
+    }
+    .btn{
+        margin-top: 15px;
+        background: #FFCCD2;
+        border-radius: 999px;
+        box-shadow: #ff0026 -5px 10px 20px -10px;
+        box-sizing: border-box;
+        color: #ff0026;
+        cursor: pointer;
+        font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        opacity: 1;
+        outline: 0 solid transparent;
+        padding: 8px 18px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: fit-content;
+        word-break: break-word;
+        border: 0;
+        
+    }
+    .footer{
+        font-family: 'Ubuntu', sans-serif;;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 450;
+    }
+    .footer p:nth-child(2){
+        width: 350px;
+        margin: auto;
+        margin-top: 40px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .funny_quotes{
+        position: absolute;
+        height: 90%;
+        top: 5%;
+        left: 10%;
+        width: 80%;
+        background-color: rgba(78, 38, 38, 0.863);
+        display: none;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .funny_quotes i{
+        color: white;
+        font-size: 40px;
+        position: absolute;
+        right: 2%;
+        top: 2%;
+        cursor: pointer;
+    }
+    
+    .funny_quotes p{
+        width: 90%;
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 14px;
+        margin: 15px 0 0 25px;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    }
+    
+
+
+
+
+
+
+    .red_love img:nth-child(11){
+        width: 43px;
+        height: 40px;
+        animation-delay: 1800ms;
+        display: none;
+    }
+    .red_love img:nth-child(12){
+        width: 29px;
+        height: 26px;
+        animation-delay: 5400ms;
+        display: none;
+    }
+    .red_love img:nth-child(13){
+        width: 36px;
+        height: 33px;
+        animation-delay: 1500ms;
+        display: none;
+    }
+    .red_love img:nth-child(14){
+        width: 43px;
+        height: 40px;
+        animation-delay: 100ms;
+        display: none;
+    }
+    .red_love img:nth-child(15){
+        width: 28px;
+        height: 25px;
+        animation-delay: 3000ms;
+        display: none;
+    }
 }
