@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&family=Ubuntu&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color:#FFCCD2;
+    color: #ff0026;
+    max-width:1680px;
+    margin: auto;
+}
+.header img{
+    width: 200px;
+    margin-top: -10px;
+    transform: rotate(-5deg);
+
+}
+.header span{
+    font-family: 'Suez One', serif;
+    font-size: 43px;
+    margin-left: -110px;
+    margin-top: -53px;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 270px 300px;
+    width: 500px;
+    margin: auto;
+    align-items: center;
+}
+.upper_content{
+    margin: -50px 0 10px 10px;
+    display: grid;
+    grid-template-columns: 200px 200px 120px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+.upper_content span{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    text-shadow: 0px 5px 5px #234d3c46;
+}
+.lovemeter{
+    height: 150px;
+    width: 150px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    border: red double 3px;
+    background-color: #faccd2;
+}
+.lovemeter_counter{
+    text-align: center;
+    display: grid;
+    height: 100%;
+    align-items: center;
+    font-size:60px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.content{
+    text-align: center;
+}
+.quote-1{
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+.form-container{
+    margin-top: 30px;
+}
+#romeo_inp, #juliet_inp, #romeo_inp:focus, #juliet:focus{
+    border: none;
+    outline: none;
+    padding: 9px 15px 9px 9px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.btn, .btn:focus{
+    outline: none;
+    border: none;
+}
+form label{
+    font-size: 24px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.inputs{
+    display: grid;
+    grid-template-columns: 450px 450px;
+    justify-content: center;
+}
+.inputs p{
+    margin-top: 3px;
+    font-size: 18px;
+}
+.romeo_err, .juliet_err{
+    height: 20px;
+}
+.btn{
+    margin-top: 15px;
+    background: #FFCCD2;
+    border-radius: 999px;
+    box-shadow: #ff0026 -5px 10px 20px -10px;
+    box-sizing: border-box;
+    color: #ff0026;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+    
+}
+.footer{
+    font-family: 'Ubuntu', sans-serif;;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 450;
+}
+.footer p:nth-child(2){
+    width: 500px;
+    margin: auto;
+    margin-top: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+.funny_quotes{
+    position: absolute;
+    height: 90%;
+    top: 5%;
+    left: 18%;
+    width: 64%;
+    background-color: rgba(78, 38, 38, 0.863);
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.funny_quotes i{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    cursor: pointer;
+}
+
+.funny_quotes p{
+    width: 90%;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    margin: 15px 0 0 25px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
