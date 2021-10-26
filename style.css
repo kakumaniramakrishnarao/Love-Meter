@@ -260,10 +260,10 @@ form label{
         transform: translateY(5vh);
         opacity: 0.7;
     }
-    87%{
+    89%{
         opacity: 0.7;
     }
-    90%{
+    92%{
         opacity: 0;
     }
     100%{
