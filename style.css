@@ -155,7 +155,18 @@ form label{
     background-color: rgba(78, 38, 38, 0.863);
     display: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    animation: newAnimi 220ms ease-out;
 }
+
+@keyframes newAnimi{
+    0%{
+        transform: translateY(100vh);
+    }
+    100%{
+        transform: translateY(0vh);
+    }
+}
+
 .funny_quotes i{
     color: white;
     font-size: 40px;
@@ -260,10 +271,10 @@ form label{
         transform: translateY(5vh);
         opacity: 0.7;
     }
-    89%{
+    87%{
         opacity: 0.7;
     }
-    92%{
+    90%{
         opacity: 0;
     }
     100%{
